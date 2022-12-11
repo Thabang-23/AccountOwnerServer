@@ -12,6 +12,7 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 
 builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureMySqlContext(builder.Configuration);
 
 builder.Services.AddControllers();
 

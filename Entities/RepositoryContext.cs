@@ -1,4 +1,4 @@
-﻿using Entities.Models;
+﻿using Contracts.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Entities

@@ -1,5 +1,7 @@
 ﻿using Contracts;
 using LoggerService;
+using Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccountOwnerServer.Extensions
 {
@@ -27,6 +29,13 @@ namespace AccountOwnerServer.Extensions
         public static void ConfigureLoggerService(this IServiceCollection services) 
         {
             services.AddSingleton<ILoggerManager, LoggerManager>();
+        }
+
+        public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
+        {
+            var connectionString = config["mysqlconnection:connectionString"];
+
+            services.AddDbContext<RepositoryContext>(x => x.UseMySql(connectionString));
         }
     }
 }
