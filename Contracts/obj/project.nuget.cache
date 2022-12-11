@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ho2i56UbgaYC+YXPpwZSJIaEf0nZ7Fggcqmq7grERKhvOZQffW8WajaqkHToa9DR+c7N5n+7kovpHQLsCG1F/w==",
+  "dgSpecHash": "lztZ+2bUOCTUkj8CwjBRqBfdwbkaMuUCFRvi8kRkQxTQCmDVGFp8Ayb4j7qU0l8786HgSbGQE4iThX9sn9RqHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\27723\\source\\repos\\AccountOwnerServer\\Contracts\\Contracts.csproj",
+  "projectFilePath": "c:\\Users\\27723\\source\\repos\\AccountOwnerServer\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
