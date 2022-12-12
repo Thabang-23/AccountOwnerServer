@@ -2,6 +2,7 @@
 using LoggerService;
 using Entities;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 
 namespace AccountOwnerServer.Extensions
 {
@@ -36,6 +37,11 @@ namespace AccountOwnerServer.Extensions
             var connectionString = config["mysqlconnection:connectionString"];
 
             services.AddDbContext<RepositoryContext>(x => x.UseMySql(connectionString));
+        }
+
+        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
 }
